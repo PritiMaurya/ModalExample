@@ -1,0 +1,68 @@
+<!--modal using ngx bootstrap-->
+<app-modal></app-modal>
+<br><br>
+<app-confirm-model></app-confirm-model>
+<!--modal using ng2 bootstrap-->
+<div class="container" >
+  <h1 class="text-center">ng2-bootstrap-modal demo</h1>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Alert example: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showAlert()>Show alert</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Confirm example: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showConfirm()>Show Confirm</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Prompt example: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showPrompt()>Show Prompt</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Alert example close after clicking outside: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showAlert1()>Show alert</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Alert example close after 5 second: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showAlert2()>Show alert</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-sm-4 text-right">
+      <b>Parent child Dialog Example: </b>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-primary btn-block" (click)=showDialog()>Show Dialog</button>
+    </div>
+  </div>
+</div>

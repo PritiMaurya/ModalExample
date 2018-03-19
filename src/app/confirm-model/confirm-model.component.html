@@ -1,0 +1,27 @@
+<button type="button" class="btn btn-primary" (click)="openModal(template)">Confirm modal</button>
+<br><br>
+<pre>{{message}}</pre>
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Do you want to confirm?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()" >Yes</button>
+    <button type="button" class="btn btn-primary" (click)="decline()" >No</button>
+  </div>
+</ng-template>
+
+<button type="button" class="btn btn-primary" (click)="confirmModal.show()">small Confirm modal</button>
+
+<div bsModal #confirmModal="bs-modal" class="modal fade" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content" align="center">
+<div class="modal-header">
+Do you Want to confirm?
+</div>
+<div class="modal-body">
+<button type="button" class="btn btn-default" (click)="confirm1()">Yes</button>
+<button type="button" class="btn btn-primary" (click)="decline1()">No</button>
+</div>
+</div>
+</div>
+</div>
